@@ -1,20 +1,11 @@
-
 import random 
 import tkinter as tk
-import os 
+import time
 
 topics = ["Artificial intelligence", "Climate change", "Cybersecurity", "Remote work", "Digital privacy", "Misinformation", "Social media", "Inflation", "Cryptocurrency", "Automation", "Mental health", "Burnout", "Sustainable fashion", "Fast fashion", "Digital nomads", "Influencer culture", "Algorithms", "Deepfakes", "Electric vehicles", "Renewable energy", "Space exploration", "Genetic engineering", "Virtual reality", "Augmented reality", "Online education", "Freelancing", "Gig economy", "E-commerce", "Web scraping", "Open-source software", "Data privacy", "Facial recognition", "Robotics", "3D printing", "Cybercrime", "Online communities", "Parasocial relationships", "Doomscrolling", "Digital minimalism", "Creator economy", "Meme culture", "Internet slang", "Cancel culture", "Political polarization", "Globalization", "Urbanization", "Overconsumption", "Minimalism", "Sustainable living", "Loneliness",]
 question_prompt = [ "Your word is:    ", ]
 
-
-
- 
-def click(): 
-  chosen_topic = random.choice(topics)
-  chosen_prompt = random.choice(question_prompt)
-  result.config(text=f"{chosen_prompt} {chosen_topic}")
-
-
+dots = 0
 
 root = tk.Tk()
 root.geometry ("600x600")
@@ -34,6 +25,49 @@ result = tk.Label(
 result.pack(pady=20 , padx= 30)
 
 
+
+    
+def cresult():
+   chosen_topic = random.choice(topics)
+   chosen_prompt = random.choice(question_prompt)
+   cresult = (f"{chosen_prompt} {chosen_topic}")
+   root.after(400, cresult)
+   
+
+
+def animate_loading():
+    
+     
+      
+
+
+    global dots
+
+    dots = (dots + 1) % 4
+     
+    result.config(text="loading." + "." * dots)
+    root.after(200, animate_loading )
+
+    
+
+    
+    
+ 
+    
+
+
+ 
+def click(): 
+  
+  animate_loading()
+  cresult()
+
+  
+
+    
+           
+
+
 button = tk.Button(
  root, 
  text = "Spinner",
@@ -45,6 +79,14 @@ button = tk.Button(
 
 button.place(x=200, y= 300)
 
+  
+
+
+
+ 
+
+
+root.mainloop()
   
 
 
