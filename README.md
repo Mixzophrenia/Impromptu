@@ -1,4 +1,7 @@
 # Impromptu
 To practice verbal fluency
-<img width="777" height="836" alt="Screenshot 2026-11-06 195435" src="https://github.com/user-attachments/assets/1ef46f88-b665-40de-9e67-2685fd4f658a" />
-<img width="807" height="858" alt="Screenshot 2026-11-06 195449" src="https://github.com/user-attachments/assets/13eb692e-ad45-450f-8eb6-c403abd57722" />
+
+<img width="401" height="431" alt="Screenshot pppp" src="https://github.com/user-attachments/assets/a02b56d9-8af8-47c8-9ec6-98ee7dff4dd7" />
+
+<img width="400" height="425" alt="screnshot ppp1" src="https://github.com/user-attachments/assets/1b809c26-8be4-494b-9217-6ecd282aa843" />
+
